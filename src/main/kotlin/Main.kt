@@ -6,8 +6,7 @@ fun main() {
 
 fun timeInMinutes(): String {
     val minute = time / 60
-    val resalt =
-        if (minute % 10 == 1 && minute % 100 != 11) "минуту" else if (minute % 10 == 2 || minute % 10 == 3 || minute % 10 == 4) "минуты" else "минут"
+    val resalt = if (minute % 10 == 1 && minute % 100 != 11) "минуту" else if (minute % 10 == 2 || minute % 10 == 3 || minute % 10 == 4) "минуты" else "минут"
     return "$minute $resalt назад"
 }
 
